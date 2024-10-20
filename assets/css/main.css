@@ -1,0 +1,30 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --dark-background: #28293e;
+  --light-background: #fdf0e9;
+  --color-primary: #ef6c57;
+  --text_accent: #ef6d58;
+  --text-dark: #391400;
+  --text-light: #fff;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+h5 {
+  font-size: 16px;
+  color: var(--text_accent);
+}
+
+section[class*="dark"] {
+  background-color: var(--dark-background);
+  color: var(--text-light);
+}
+
+section[class*="light"] {
+  background-color: var(--light-background);
+  color: var(--text-dark);
+}
